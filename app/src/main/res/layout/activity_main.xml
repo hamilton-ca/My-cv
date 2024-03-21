@@ -18,34 +18,48 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:fontFamily="cursive"
-            android:text="Hamilton"
-            android:textSize="30sp" />
+            android:text="Hamilton Ca"
+            android:textSize="15sp" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/textView_ask_4_nickname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="what is your name?" />
+            android:text="what is your nickname?" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="write your name "
-            android:inputType=""
-            android:textSize="20sp" />
+            android:hint="write your nickname "
+            android:inputType="text"
+            android:text=""
+            android:textSize="10sp" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/bt_show_cv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/show" />
+            android:text="show" />
 
-        <TextView
-            android:id="@+id/textView3"
+        <ScrollView
+            android:id="@+id/show_CV"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/cv" />
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/textView_cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.2"
+                android:padding="10dp"
+                android:text="@string/cv"
+                android:textAlignment="textStart"
+                android:visibility="visible" />
+        </ScrollView>
+
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
